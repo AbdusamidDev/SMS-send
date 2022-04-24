@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/sms_text"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/sms_receiver"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_200"
+        android:inputType="phone"
+        android:text="@string/send"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="TextViewEdits" />
+</LinearLayout>
